@@ -1,22 +1,26 @@
-# 🛒 Framework Kiểm Thử Tự Động SauceDemo (QA Automation)
+# 🛒 Project Automation Test - SauceDemo
 
-Kho lưu trữ này chứa framework kiểm thử tự động toàn trình (End-to-End) cho nền tảng thương mại điện tử [SauceDemo](https://www.saucedemo.com/). Dự án được thiết kế với kiến trúc dễ mở rộng, mô phỏng lại các hành vi thực tế của khách hàng từ lúc xác thực tài khoản đến khi thanh toán thành công.
+Đây là project cá nhân mình setup để chạy test tự động (End-to-End) cho trang web bán hàng [SauceDemo](https://www.saucedemo.com/). 
 
-## 🚀 Công Nghệ Sử Dụng
-* **Công cụ Tự động hóa:** Playwright
-* **Ngôn ngữ Lập trình:** TypeScript
-* **Mô hình Thiết kế:** Page Object Model (POM)
-* **Quản lý Mã nguồn:** Git & GitHub
+Mục tiêu của repo này là build một framework test gọn gàng, mô phỏng lại luồng mua hàng thực tế của user từ lúc login đến khi thanh toán xong.
 
-## 📂 Kiến Trúc Dự Án
-Framework tuân thủ nghiêm ngặt mô hình **Page Object Model (POM)** để phân tách rõ ràng giữa giao diện và logic kiểm thử, giúp mã nguồn dễ bảo trì khi dự án mở rộng.
+## 🛠 Tech Stack
+* **Core:** Playwright
+* **Language:** TypeScript
+* **Design Pattern:** Page Object Model (POM)
 
-* `pages/`: Chứa các lớp (Class) quản lý định vị phần tử (locators) và các thao tác của người dùng trên từng trang cụ thể (VD: `LoginPage.ts`, `InventoryPage.ts`).
-* `tests/`: Chứa các kịch bản kiểm thử (specs) và các bước xác nhận kết quả (assertions).
-* `playwright.config.ts`: Tệp cấu hình tổng thể (Trình duyệt, thời gian chờ, xuất báo cáo).
+## 📂 Cấu trúc Project
+Mình thiết kế code theo pattern POM để tách biệt phần UI và logic test, giúp dễ maintain khi web thay đổi UI.
 
-## ⚙️ Hướng Dẫn Cài Đặt Và Chạy Cục Bộ
+* `pages/`: Chứa các class định nghĩa locator và action của từng trang (VD: `LoginPage.ts`, `InventoryPage.ts`).
+* `tests/`: Chứa các file kịch bản test chính.
+* `playwright.config.ts`: File config chung của Playwright.
 
-**1. Tải dự án về máy (Clone repository):**
+## 🚀 Hướng dẫn setup & chạy ở máy (Local)
+
+**1. Clone repo & cài thư viện:**
 ```bash
 git clone [https://github.com/DangKhoa1822041379/Luma-Automation-Project.git](https://github.com/DangKhoa1822041379/Luma-Automation-Project.git)
+cd Luma-Automation-Project
+npm install
+npx playwright install
