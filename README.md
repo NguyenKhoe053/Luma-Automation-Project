@@ -4,8 +4,15 @@
 
 Mục tiêu của repo này là build một framework test gọn gàng, chuẩn công nghiệp, mô phỏng lại luồng mua hàng thực tế của user từ lúc login đến khi thanh toán xong, đồng thời áp dụng các kỹ thuật thiết kế code của một QA chuyên nghiệp.
 
-## 📊 Kết Quả Kiểm Thử (Test Report)
-![Playwright Test Report](./docs/test-report.png)
+## 📊 Kết Quả Kiểm Thử (Test Reports)
+
+Dự án có khả năng xuất đa dạng các loại báo cáo để phục vụ cho các cấp quản lý khác nhau:
+
+**1. Báo cáo tổng quan cho Manager (Allure Dashboard):**
+![Allure Report](./docs/allure-dashboard.png)
+
+**2. Báo cáo chi tiết cho Developer/QA (Playwright HTML):**
+![Playwright Report](./docs/playwright-report.png)
 
 ## 🛠 Tech Stack & Kỹ Thuật Áp Dụng
 * **Core:** Playwright
