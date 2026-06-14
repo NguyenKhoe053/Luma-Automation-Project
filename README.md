@@ -1,26 +1,30 @@
-# 🛒 Project Automation Test - SauceDemo
+# 🛒 Automation Test Framework - SauceDemo
 
 Đây là project cá nhân mình setup để chạy test tự động (End-to-End) cho trang web bán hàng [SauceDemo](https://www.saucedemo.com/). 
 
-Mục tiêu của repo này là build một framework test gọn gàng, mô phỏng lại luồng mua hàng thực tế của user từ lúc login đến khi thanh toán xong.
+Mục tiêu của repo này là build một framework test gọn gàng, chuẩn công nghiệp, mô phỏng lại luồng mua hàng thực tế của user từ lúc login đến khi thanh toán xong, đồng thời áp dụng các kỹ thuật thiết kế code của một QA chuyên nghiệp.
 
-## 🛠 Tech Stack
+## 📊 Kết Quả Kiểm Thử (Test Report)
+![Playwright Test Report](./docs/test-report.png)
+
+## 🛠 Tech Stack & Kỹ Thuật Áp Dụng
 * **Core:** Playwright
 * **Language:** TypeScript
-* **Design Pattern:** Page Object Model (POM)
+* **Design Pattern:** Page Object Model (POM) - Giúp tách biệt phần giao diện (UI) và logic test, dễ bảo trì khi web thay đổi.
+* **Data-Driven Testing (DDT):** Bóc tách hoàn toàn dữ liệu test (Test Data) khỏi mã nguồn, hút dữ liệu tự động từ file JSON.
 
 ## 📂 Cấu trúc Project
-Mình thiết kế code theo pattern POM để tách biệt phần UI và logic test, giúp dễ maintain khi web thay đổi UI.
-
-* `pages/`: Chứa các class định nghĩa locator và action của từng trang (VD: `LoginPage.ts`, `InventoryPage.ts`).
-* `tests/`: Chứa các file kịch bản test chính.
-* `playwright.config.ts`: File config chung của Playwright.
+* `pages/`: Chứa các class định nghĩa Locator và Action của từng trang (VD: `LoginPage.ts`, `InventoryPage.ts`).
+* `tests/`: Chứa các file kịch bản test thực tế.
+* `fixtures/`: Chứa các file `users.json` lưu trữ tài khoản test.
+* `docs/`: Chứa hình ảnh báo cáo (Test Reports).
+* `playwright.config.ts`: File config chung của hệ thống.
 
 ## 🚀 Hướng dẫn setup & chạy ở máy (Local)
 
 **1. Clone repo & cài thư viện:**
 ```bash
-git clone [https://github.com/DangKhoa1822041379/Luma-Automation-Project.git](https://github.com/DangKhoa1822041379/Luma-Automation-Project.git)
+git clone [https://github.com/NguyenKhoe053/Luma-Automation-Project.git](https://github.com/NguyenKhoe053/Luma-Automation-Project.git)
 cd Luma-Automation-Project
 npm install
 npx playwright install
