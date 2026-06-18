@@ -1,6 +1,6 @@
 # 🛒 Automation Test Framework - SauceDemo
 
-Đây là project cá nhân mình setup để chạy test tự động (End-to-End) cho trang web bán hàng [SauceDemo](https://www.saucedemo.com/). 
+Đây là project cá nhân mình setup để chạy test tự động (End-to-End) cho trang web bán hàng [SauceDemo](https://www.saucedemo.com/)
 
 Mục tiêu của repo này là build một framework test gọn gàng, chuẩn công nghiệp, mô phỏng lại luồng mua hàng thực tế của user từ lúc login đến khi thanh toán xong, đồng thời áp dụng các kỹ thuật thiết kế code của một QA chuyên nghiệp
 
